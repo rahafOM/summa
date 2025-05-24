@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Summa - منصة لتجميع تلاخيص مواد الهندسة بطريقة منظمة وسريعة">
+  <title>Summa | مقدمة</title>
+  <link rel="stylesheet" href="intstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="image/book-open-cover.png" />
+</head>
+
+<body>
+  <header>
+    <h1>Summa</h1>
+    <p class="tagline">تَلاخيصك الهَندسية في مكانٍ واحد :)</p>
+    <div class="controls">
+      <button id="langToggle">EN</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-text">
+      <h2>مرحباً بك في سُوما</h2>
+      <p>
+        سُما هو موقع يهدف إلى تجميع تلاخيص مواد الهندسة بطريقة منظمة وأكاديمية، ليساعد الطلاب على الوصول للمعلومات
+        بسهولة وسرعة
+        <br>
+        المُهندسة رهف ملحم
+      </p>
+      <p class="en-text" style="display:none;">
+        Our goal is to gather engineering summaries in a neat and academic way to help students access information
+        easily and quickly
+        <br> Eng Rahaf Melhem
+      </p>
+      <a href="main.html" class="enter-btn">دخول الموقع</a>
+    </section>
+    <section class="intro-image">
+      <img src="image/2085917.png" alt="موقع تلاخيص" />
+    </section>
+
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Summa جميع الحقوق محفوظة</p>
+    <div class="social-icons">
+      <a href="mailto:rahfosama234@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/rahaf-melhem-a69035363/" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/rahafOM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/share/16GLAm59rG/?mibextid=wwXIfr" target="_blank" title="Facebook"><i
+          class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const langToggle = document.getElementById('langToggle');
+    langToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const introText = document.querySelector('.intro-text');
+      const isArabic = html.lang === 'ar';
+
+      if (isArabic) {
+        html.lang = 'en';
+        html.dir = 'ltr';
+        document.querySelector('h1').textContent = 'Summa';
+        document.querySelector('.tagline').textContent = ':) Your Engineering Summaries in One Place';
+        document.querySelector('main h2').textContent = 'Welcome to Summa';
+        introText.querySelector('p').style.display = 'none';
+        introText.querySelector('.en-text').style.display = 'block';
+        document.querySelector('.enter-btn').textContent = 'Enter Site';
+        document.querySelector('footer p').textContent = '© 2025 Summa. All rights reserved.';
+        langToggle.textContent = 'AR';
+
+      } else {
+        html.lang = 'ar';
+        html.dir = 'rtl';
+
+        document.querySelector('h1').textContent = 'Summa';
+        document.querySelector('.tagline').textContent = 'تلاخيصك الهَندسية في مكانٍ واحد :)';
+        document.querySelector('main h2').textContent = 'مرحباً بك في سُما';
+        introText.querySelector('p').style.display = 'block';
+        introText.querySelector('.en-text').style.display = 'none';
+        document.querySelector('.enter-btn').textContent = 'دخول الموقع';
+        langToggle.textContent = 'EN';
+        document.querySelector('footer p').textContent = '© 2025 Summa. جميع الحقوق محفوظة.';
+
+      }
+    });
+
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+
+</html>
+

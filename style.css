@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root {
+    --main-bg: linear-gradient(135deg, #003366, #2E8B57);
+    --dark-bg: linear-gradient(135deg, #0a3d62, #145a32);
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --dark-card-bg: rgba(0, 0, 0, 0.5);
+    --text-color: white;
+    --dark-text-color: #d1e8e2;
+    --accent: #2E8B57;
+    --accent-dark: #145a32;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    background: var(--main-bg);
+    color: var(--text-color);
+    direction: rtl;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem 0;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+.controls {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.controls button {
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.controls button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.materials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: transparent;
+}
+
+.material {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.material:hover {
+    transform: translateY(-5px);
+}
+
+.material img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+
+.material h2 {
+    margin: 0.7rem 0;
+    font-weight: 700;
+}
+
+.material p {
+    margin: 0.3rem 0 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.material a {
+    display: inline-block;
+    margin-top: auto;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.material a:hover {
+    background-color: var(--accent-dark);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    background: transparent !important;
+    box-shadow: none;
+    border: none;
+}
+
+.back-button-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+body.dark {
+    background: var(--dark-bg);
+    color: var(--dark-text-color);
+}
+
+body.dark .material {
+    background-color: var(--dark-card-bg);
+}
+
+body.dark footer {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
