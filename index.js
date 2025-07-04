@@ -166,17 +166,17 @@ const materialsData = [
   },
      {
     ar: {
-      title: 'شبكات الحاسوب',
-      description: 'يشرح أساسيات شبكات الحاسوب، البروتوكولات، تقنيات الاتصال، وأنواع الشبكات بطريقة مبسطة وواضحة',
+      title: 'لغة ترميز النص التشعبي (HTML)',
+      description: 'لغة بسيطة جدًا تستخدم لوصف ما صفحاته، تلخيص بسيط لهذه اللغة ',
       linkText: 'قريباَ',
-      linkHref:'https://drive.google.com/drive/folders/1-LX9t3sTuSxyV_1wMqSzk-PZjWDptpBP?usp=drive_link'
+      linkHref:'https://drive.google.com/drive/folders/1YtRyhIoM28pEqT1ZWtOWtYCLT7D0nSES?usp=drive_link'
 
     },
     en: {
-      title: 'Computer networks',
-      description: 'Explains the basics of computer networks, protocols, communication technologies, and types of networks in a simple and clear manner',
+      title: 'Computer Hypertext Markup Language (HTML)',
+      description: 'A very simple language used to describe what its pages contain, a simple summary of this language ',
       linkText: 'Soon',
-      linkHref:'https://drive.google.com/drive/folders/1-LX9t3sTuSxyV_1wMqSzk-PZjWDptpBP?usp=drive_link'
+      linkHref:'https://drive.google.com/drive/folders/1YtRyhIoM28pEqT1ZWtOWtYCLT7D0nSES?usp=drive_link'
     }
   },
 
