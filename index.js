@@ -168,18 +168,77 @@ const materialsData = [
     ar: {
       title: 'لغة ترميز النص التشعبي (HTML)',
       description: 'لغة بسيطة جدًا تستخدم لوصف ما صفحاته، تلخيص بسيط لهذه اللغة ',
-      linkText: 'قريباَ',
+      linkText: 'تحميل التلخيص',
       linkHref:'https://drive.google.com/drive/folders/1YtRyhIoM28pEqT1ZWtOWtYCLT7D0nSES?usp=drive_link'
 
     },
     en: {
       title: 'Computer Hypertext Markup Language (HTML)',
       description: 'A very simple language used to describe what its pages contain, a simple summary of this language ',
-      linkText: 'Soon',
+      linkText: 'Download Summary',
       linkHref:'https://drive.google.com/drive/folders/1YtRyhIoM28pEqT1ZWtOWtYCLT7D0nSES?usp=drive_link'
     }
   },
+       {
+    ar: {
+      title: 'ورقة الانماط المتتالية(CSS)',
+      description: 'لغة تستخدم في تصميم صفحات الويب فمن خلالها يمكنك تغيير ألوان العناصر، تحديد مواقعها و أحجامها، إضافة مؤثرات لها، جعل صفحات الويب متجاوبة مع مختلف أحجام الشاشات لكي تظهر بشكل ملائم للمستخدم سواء كان يفتح الصفحة بواسطة هاتف، تابلت أو حاسوب ',
+      linkText: 'تحميل التلخيص',
+      linkHref:'https://drive.google.com/drive/folders/1lLO9IcRBJHhr789PW3xjA8BUgLTzLuVL?usp=drive_link'
 
+    },
+    en: {
+      title: 'Cascading Style Sheet (css)',
+      description: 'A language used in web design, it is clear that you can change the colors of elements, determine their positions and sizes, add operators to them, and make web pages consistent with different screen sizes to partially crop for the user whether they are closing the page via a phone, tablet, or computer.',
+      linkText: 'Download Summary',
+      linkHref:'https://drive.google.com/drive/folders/1lLO9IcRBJHhr789PW3xjA8BUgLTzLuVL?usp=drive_link'
+    }
+  },
+       {
+    ar: {
+      title: 'أنظمة الالياف الضوئية',
+      description: 'تلخيص مادة الألياف الضوئية (Fiber Optics) ويشمل: أنواع الألياف، خصائصها، نماذج الانتشار، الفقد والتشتيت، والتطبيقات العملية – مرتب بشكل مبسط وسريع للمراجع',
+      linkText: 'تحميل التلخيص',
+      linkHref:'https://drive.google.com/drive/folders/1juRAiUiUkBWA5vnRIBbi0aCx5dTLvLmt?usp=drive_link'
+
+    },
+    en: {
+      title: 'Fiber Optics ',
+      description: 'Fiber Optics Summary: Fiber types, properties, propagation models, loss and dispersion, and practical applications - organized in a simple and quick review format',
+      linkText: 'Download Summary',
+      linkHref:'https://drive.google.com/drive/folders/1juRAiUiUkBWA5vnRIBbi0aCx5dTLvLmt?usp=drive_link'
+    }
+  },
+      {
+    ar: {
+      title: 'أنظمة التحكم',
+      description: 'تلخيص مادة أنظمة التحكم (Control Systems) ويشمل: أنواع الأنظمة، خصائص الاستجابة، التمثيل بالمخططات، تحويل لابلاس، الاستقرارية، تحليل التردد، وتصميم أنظمة التحكم – مرتب ومبسط للمراجعة السريعة والفهم العميق',
+      linkText: 'تحميل التلخيص',
+      linkHref:'https://drive.google.com/drive/folders/1gcmEY6GfVLSlTli_r6a5xFx2zWZQMQnw?usp=drive_link'
+
+    },
+    en: {
+      title: 'Control System ',
+      description: 'Control Systems Summary: Types of systems, response characteristics, graphical representation, Laplace transform, stability, frequency analysis, and control systems design - organized and simplified for quick review and deep understanding',
+      linkText: 'Download Summary',
+      linkHref:'https://drive.google.com/drive/folders/1gcmEY6GfVLSlTli_r6a5xFx2zWZQMQnw?usp=drive_link'
+    }
+  },
+      {
+    ar: {
+      title: 'التشفير وامن الشبكات',
+      description: 'تلخيص مادة التشفير وأمن الشبكات ويشمل: أنواع التشفير، خوارزميات التشفير المتماثل وغير المتماثل، التواقيع الرقمية، إدارة المفاتيح، بروتوكولات الأمان، أنواع الهجمات، وآليات الحماية – مرتب بطريقة مبسطة وشاملة للمراجعة السريعة والفهم الواضح',
+      linkText: 'تحميل التلخيص',
+      linkHref:'https://drive.google.com/drive/folders/1sRrYxzqd9xyxW7Ia5tirrEN_FgsqwGja?usp=drive_link'
+
+    },
+    en: {
+      title: 'Cryptography and network security ',
+      description: 'Summary of the material on cryptography and network security, including: types of encryption, symmetric and asymmetric encryption algorithms, digital signatures, key management, security protocols, types of attacks, and protection mechanisms - arranged in a simplified and comprehensive manner for quick review and clear understanding',
+      linkText: 'Download Summary',
+      linkHref:'https://drive.google.com/drive/folders/1sRrYxzqd9xyxW7Ia5tirrEN_FgsqwGja?usp=drive_link'
+    }
+  },
 ];
 
 langToggle.addEventListener('click', () => {
