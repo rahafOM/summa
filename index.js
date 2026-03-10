@@ -239,6 +239,21 @@ const materialsData = [
       linkHref:'https://drive.google.com/drive/folders/1sRrYxzqd9xyxW7Ia5tirrEN_FgsqwGja?usp=drive_link'
     }
   },
+   {
+    ar: {
+      title: 'لغة البرمجة Python',
+      description:'كتاب Python ويشمل: مفاهيم البرمجة، بنية اللغة، المكتبات الأساسية، تطبيقات عملية – مرتب بطريقة مبسطة وشاملة للمراجعة السريعة والفهم الواضح',
+      linkText: 'تحميل الكتاب',
+      linkHref:'https://drive.google.com/file/d/1HDQVInBD-viD-CRudhoQYnMF52xHgvW-/view?usp=drive_link'
+
+    },
+    en: {
+      title: 'Python Programming ',
+      description: 'Python Programming Book: Concepts of programming, language structure, core libraries, and practical applications – organized in a simplified and comprehensive manner for quick review and clear understanding',
+      linkText: 'Download book',
+      linkHref:'https://drive.google.com/file/d/1HDQVInBD-viD-CRudhoQYnMF52xHgvW-/view?usp=drive_link'
+    }
+  },
 ];
 
 langToggle.addEventListener('click', () => {
