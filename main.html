@@ -21,7 +21,18 @@
   </header>
 
   <main>
-    <section class="materials">
+    <div class="library-heading">
+      <div>
+        <p class="eyebrow" id="libraryEyebrow">مكتبتك الهندسية</p>
+        <h2 id="libraryTitle">مادتك، بخطوة واحدة.</h2>
+        <p id="libraryDescription">تصفح 21 مادة، واختر التلخيص الذي تحتاجه.</p>
+      </div>
+      <label class="search-box" for="materialSearch">
+        <span id="searchLabel">ابحث عن مادة</span>
+        <input type="search" id="materialSearch" placeholder="اسم المادة أو موضوعها..." autocomplete="off" />
+      </label>
+    </div>
+    <section class="materials" aria-label="تلاخيص المواد">
       <div class="material">
         <img src="image/Screenshot 2025-05-24 131529.png" alt="++C" class="logo" />
         <h2>سي بلس بلس</h2>
@@ -151,7 +162,32 @@
         <a href=https://drive.google.com/file/d/1HDQVInBD-viD-CRudhoQYnMF52xHgvW-/view?usp=drive_link
           target="_blank">تحميل الكتاب</a>
       </div>
+      <div class="material">
+        <img src="image/vhdl-circuit.png" alt="تصميم دوائر رقمية ومحاكاة إشارات باستخدام VHDL" class="logo" loading="lazy" />
+        <h2>VHDL</h2>
+        <p>تلاخيص مادة VHDL مرتبة في مجلد واحد لسهولة الوصول والمراجعة.</p>
+        <a href="https://drive.google.com/drive/folders/1i3Ki2e2kAc3JI8bZ_8P5mVbWhQNsyiU-?usp=drive_link" target="_blank" rel="noopener noreferrer">فتح التلاخيص</a>
+      </div>
+      <div class="material">
+        <img src="image/assembly-cover.png" alt="لغة Assembly مع تعليمات برمجية بلغة التجميع" class="logo" loading="lazy" />
+        <h2>اسمبلي</h2>
+        <p>تلاخيص مادة الاسمبلي في مكان واحد، جاهزة للقراءة والمراجعة.</p>
+        <a href="https://drive.google.com/drive/folders/1yugRL-_hLfAlddalEgB_P-2-ijoW1mP1?usp=drive_link" target="_blank" rel="noopener noreferrer">فتح التلاخيص</a>
+      </div>
+      <div class="material">
+        <img src="image/computer-architecture-cover.png" alt="معالج إلكتروني ومسارات رقمية تمثل معمارية الحاسوب" class="logo" loading="lazy" />
+        <h2>معمارية الحاسوب</h2>
+        <p>تلاخيص مادة معمارية الحاسوب منظمة في مجلد واحد للمراجعة والدراسة.</p>
+        <a href="https://drive.google.com/drive/folders/1Zsi6diY8mbrtRfryGDCKQ5Gaw0egp8Hd?usp=drive_link" target="_blank" rel="noopener noreferrer">فتح التلاخيص</a>
+      </div>
+      <div class="material">
+        <img src="image/advanced-databases-cover.png" alt="قواعد بيانات متصلة بالخوادم والتخزين السحابي" class="logo" loading="lazy" />
+        <h2>مواضيع متقدمة في قواعد البيانات</h2>
+        <p>تلاخيص مادة مواضيع متقدمة في قواعد البيانات، مجمعة لسهولة الوصول إليها.</p>
+        <a href="https://drive.google.com/drive/folders/1xKmBmt-pT0bfSHXvv4gzEsHY4VN7frTc?usp=drive_link" target="_blank" rel="noopener noreferrer">فتح التلاخيص</a>
+      </div>
     </section>
+    <p id="emptyState" class="empty-state" role="status" hidden>لا توجد مواد مطابقة. جرّب كلمة أخرى.</p>
   </main>
 
   <footer>
@@ -161,13 +197,10 @@
     </div>
 
     <p>&copy; 2025 Summa. جميع الحقوق محفوظة.</p>
+
   </footer>
 
-  <script>
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
+  <script src="design.js" defer></script>
 </body>
 
 </html>
